@@ -1,426 +1,516 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">URIEL</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+      <header>
+        <div class="logo">
+          <a href="#">URIEL</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
     </div>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
-            </div>
-            <h1>URIEL ROJAS</h1>
-            <h2>Ingeniero en Tecnologías de la Información</h2>
-            <div class="redes">
-                <a  target="_blank" href="https://www.linkedin.com/in/uriel-rojas-reynosa-605720249/"><i class="fa-brands fa-linkedin"></i></a>
-                <a  target="_blank" href="https://github.com/RojasReynosa"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:urielr.reynosa@gmail.com"><i class="fa-brands fa-google"></i></a>
-            </div>
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt="" />
         </div>
+        <h1>URIEL ROJAS</h1>
+        <h2>Ingeniero en Tecnologías de la Información</h2>
+        <div class="redes">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/uriel-rojas-reynosa-605720249/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/RojasReynosa"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:urielr.reynosa@gmail.com"
+            ><i class="fa-brands fa-google"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Uriel Rojas </span>Soy un profesional con experiencia sólida en sistemas informáticos. Un apasionado por el 
-                Networking, Telecomunicaciones y la Ciberseguridad.</p>
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            15/07/2000
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +52 669 2725843
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            urielr.reynosa@gmail.com
-                        </li>   
-                        <li>
-                            <strong>Website</strong>
-                            reynosa.website
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            82165 Mazatlán, Mexico 
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                    </ul>
-                </div>
+      <div class="contenido-seccion">
+        <h2>Sobre Mi</h2>
+        <p>
+          <span>Hola, soy Uriel Rojas </span>Soy un profesional con experiencia
+          sólida en sistemas informáticos. Un apasionado por el Networking,
+          Telecomunicaciones y la Ciberseguridad.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                15/07/2000
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +52 669 2725843
+              </li>
+              <li>
+                <strong>Email</strong>
+                urielr.reynosa@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                reynosa.website
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                82165 Mazatlán, Mexico
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- intereses -->
-                <div class="col">
-                    <h3>intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-film"></i>
-                            <span>CINE</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <span>EJERCICIO</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-linux"></i>
-                            <span>LINUX</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-html5"></i>
-                            <span>HTML</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-python"></i>
-                            <span>PYTHON</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-brands fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <a class="button-no-link my-button" href="img/CV.pdf" download="CV.pdf" class="fa-solid fa-download"> DESCARGAR CV
-                <button></button>
-                <span class="overlay"></span>
-            </a>
+          <!-- intereses -->
+          <div class="col">
+            <h3>intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="intereses">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-film"></i>
+                <span>CINE</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>EJERCICIO</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-linux"></i>
+                <span>LINUX</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-python"></i>
+                <span>PYTHON</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-aws"></i>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <a
+          class="button-no-link my-button"
+          href="img/CV.pdf"
+          download="CV.pdf"
+          class="fa-solid fa-download"
+        >
+          DESCARGAR CV
+          <button></button>
+          <span class="overlay"></span>
+        </a>
+      </div>
     </section>
 
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso javascript">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso htmlcss">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="barra-skill">
-                            <div class="progreso python">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL</span>
-                        <div class="barra-skill">
-                            <div class="progreso sql">
-                                <span>30%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Comandos BASH</span>
-                        <div class="barra-skill">
-                            <div class="progreso bash">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso php">
-                                <span>40%</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>60%</span>
                 </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Trabajo Bajo Presión</span>
-                        <div class="barra-skill">
-                            <div class="progreso presion">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso equipo">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso creatividad">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso dedicado">
-                                <span>65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso pm">
-                                <span>75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Auto Didacta</span>
-                        <div class="barra-skill">
-                            <div class="progreso au">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso htmlcss">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso python">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL</span>
+              <div class="barra-skill">
+                <div class="progreso sql">
+                  <span>30%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Comandos BASH</span>
+              <div class="barra-skill">
+                <div class="progreso bash">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="barra-skill">
+                <div class="progreso php">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Trabajo Bajo Presión</span>
+              <div class="barra-skill">
+                <div class="progreso presion">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso equipo">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creatividad">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso dedicado">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso pm">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Auto Didacta</span>
+              <div class="barra-skill">
+                <div class="progreso au">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Tecnologías de la Información</h4>
-                        <span class="casa">Universidad Politecnica de Sinaloa</span>
-                        <span class="fecha">2019 - 2022</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Cursos de Redes y Ciberseguridad</h4>
-                        <span class="casa">Cisco Networkin Academy</span>
-                        <span class="fecha">2019 - 2022</span>
-                        <ol style="list-style-type:circle">
-                            <li type="circle">Introduction to Cybersecurity</li>
-                            <li type="circle">Introduction to IoT</li>
-                            <li type="circle">CCNA R&S: Introduction to Networks</li>
-                            <li type="circle">CCNA R&S: Routing and Switching Essentials</li>
-                            <li type="circle">CCNAv7: Bridging</li>
-                            <li type="circle">Cybersecurity Essentials</li>
-                        </ol>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Curso completo de Hacking Ético y Ciberseguridad
-                        </h4>
-                        <span class="casa">Udemy</span>
-                        <span class="fecha">2023 - 2023</span>
-                        <ol style="list-style-type:circle">
-                            <li type="circle">Metodologías de Hacking Ético: OSSTMM, PTEST, ISSAF, OTP</li>
-                            <li type="circle">Recopilación pasiva de información</li>
-                            <li type="circle">Recopilación semi-pasiva de información</li>
-                            <li type="circle">Recopilación activa de información</li>
-                            <li type="circle">Análisis de vulnerabilidades</li>
-                            <li type="circle">Explotación de vulnerabilidades en aplicaciones web</li>
-                            <li type="circle">Explotación de vulnerabilidades en Hosts</li>
-                            <li type="circle">Explotación de vulnerabilidades en red</li>
-                            <li type="circle">Post-Explotación</li>
-                            <li type="circle">Machine Learning aplicado a Hacking</li>
-                        </ol>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Practicante de sistemas</h4>
-                        <span class="casa">Terminal Maritima Mazatlán / TMAZ</span>
-                        <span class="fecha">Sep 2022 - Dic 2022</span>
-                        <p>Mi experiencia incluye el mantenimiento de hardware y software, gestión de usuarios, mejora de 
-                            infraestructura de comunicaciones, documentación de procesos y migración de software de CCTV. Estas 
-                            habilidades han contribuido a mantener la eficiencia y seguridad en entornos informáticos.</p>                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Auxiliar en sistemas</h4>
-                        <span class="casa">Terminal Maritima Mazatlán / TMAZ</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Mi experiencia abarca una amplia gama de responsabilidades, como proporcionar soporte técnico 
-                            presencial y remoto, mejorar el cableado de red, gestionar sistemas CCTV y realizar inventarios de 
-                            equipos. Además, he contribuido a documentar sistemas internos, liderar proyectos de remodelación de 
-                            red, y he participado en migraciones de sistemas. También he gestionado usuarios, configurado switches y 
-                            routers. Estas habilidades reflejan mi capacidad para mantener y optimizar infraestructuras tecnológicas 
-                            en diversos entornos laborales.</p>                        
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Auxiliar en sistemas</h4>
-                        <span class="casa">Grupo Gaola</span>
-                        <span class="fecha">2023 - Actualidad</span>
-                        <p>Mi trabajo se basa es mantener el cuidado de los servidores de la empresa, dar soporte de primer nivel a los usuarios,
-                            instalar sistemas de vigilancia, hacer cotizaciones para el departamento de sistemas, implementarar mejoras a los sistemas
-                            de la empresa y respaldar todos los datos de los servidores.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Tecnologías de la Información</h4>
+              <span class="casa">Universidad Politecnica de Sinaloa</span>
+              <span class="fecha">2019 - 2022</span>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
             </div>
+            <div class="item izq">
+              <h4>Cursos de Redes y Ciberseguridad</h4>
+              <span class="casa">Cisco Networkin Academy</span>
+              <span class="fecha">2019 - 2022</span>
+              <ol style="list-style-type: circle">
+                <li type="circle">Introduction to Cybersecurity</li>
+                <li type="circle">Introduction to IoT</li>
+                <li type="circle">CCNA R&S: Introduction to Networks</li>
+                <li type="circle">
+                  CCNA R&S: Routing and Switching Essentials
+                </li>
+                <li type="circle">CCNAv7: Bridging</li>
+                <li type="circle">Cybersecurity Essentials</li>
+              </ol>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Curso completo de Hacking Ético y Ciberseguridad</h4>
+              <span class="casa">Udemy</span>
+              <span class="fecha">2023 - 2023</span>
+              <ol style="list-style-type: circle">
+                <li type="circle">
+                  Metodologías de Hacking Ético: OSSTMM, PTEST, ISSAF, OTP
+                </li>
+                <li type="circle">Recopilación pasiva de información</li>
+                <li type="circle">Recopilación semi-pasiva de información</li>
+                <li type="circle">Recopilación activa de información</li>
+                <li type="circle">Análisis de vulnerabilidades</li>
+                <li type="circle">
+                  Explotación de vulnerabilidades en aplicaciones web
+                </li>
+                <li type="circle">Explotación de vulnerabilidades en Hosts</li>
+                <li type="circle">Explotación de vulnerabilidades en red</li>
+                <li type="circle">Post-Explotación</li>
+                <li type="circle">Machine Learning aplicado a Hacking</li>
+              </ol>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Practicante de sistemas</h4>
+              <span class="casa">Terminal Maritima Mazatlán / TMAZ</span>
+              <span class="fecha">Sep 2022 - Dic 2022</span>
+              <p>
+                Mi experiencia incluye el mantenimiento de hardware y software,
+                gestión de usuarios, mejora de infraestructura de
+                comunicaciones, documentación de procesos y migración de
+                software de CCTV. Estas habilidades han contribuido a mantener
+                la eficiencia y seguridad en entornos informáticos.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Auxiliar en sistemas</h4>
+              <span class="casa">Terminal Maritima Mazatlán / TMAZ</span>
+              <span class="fecha">2022 - 2023</span>
+              <p>
+                Mi experiencia abarca una amplia gama de responsabilidades, como
+                proporcionar soporte técnico presencial y remoto, mejorar el
+                cableado de red, gestionar sistemas CCTV y realizar inventarios
+                de equipos. Además, he contribuido a documentar sistemas
+                internos, liderar proyectos de remodelación de red, y he
+                participado en migraciones de sistemas. También he gestionado
+                usuarios, configurado switches y routers. Estas habilidades
+                reflejan mi capacidad para mantener y optimizar infraestructuras
+                tecnológicas en diversos entornos laborales.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Auxiliar en sistemas</h4>
+              <span class="casa">Grupo Gaola</span>
+              <span class="fecha">2023 - Actualidad</span>
+              <p>
+                Mi trabajo se basa es mantener el cuidado de los servidores de
+                la empresa, dar soporte de primer nivel a los usuarios, instalar
+                sistemas de vigilancia, hacer cotizaciones para el departamento
+                de sistemas, implementarar mejoras a los sistemas de la empresa
+                y respaldar todos los datos de los servidores.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- SECCION PORTAFOLIO -->
-    <section id="portafolio" class="portafolio"> 
-        <div class="contenido-seccion">
-            <h2>PORTAFOLIO</h2>
-            <div class="galeria">
-                <a class="proyecto" target="_blank" href="https://soportegaola.com/"><div> <!-- Copiar de este div -->
-                    <img src="img/img1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Desarrollo y gestión</h3>
-                        <p>Sistema de tickets</p>
-                    </div>
-                </div></a><!-- Hasta este para un nuevo proyecto -->
-                <a class="proyecto" target="_blank" href="https://reynosa.website/Regalo/"><div >
-                    <img src="img/img2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Desarrollo web</h3>
-                        <p>Carta con contador de fecha y hora</p>
-                    </div>
-                </div></a>
-                <a class="proyecto" target="_blank" href="https://reynosa.website/Graficos/"><div>
-                    <img src="img/img3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Desarrollo web</h3>
-                        <p>Generador de Gráficos</p>
-                    </div>
-                </div></a>
-            </div>
+    <section id="portafolio" class="portafolio">
+      <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+          <a class="proyecto" target="_blank" href="https://soportegaola.com/"
+            ><div>
+              <!-- Copiar de este div -->
+              <img src="img/img1.jpg" alt="" />
+              <div class="overlay">
+                <h3>Desarrollo y gestión</h3>
+                <p>Sistema de tickets</p>
+              </div>
+            </div></a
+          ><!-- Hasta este para un nuevo proyecto -->
+          <a
+            class="proyecto"
+            target="_blank"
+            href="https://reynosa.website/Regalo/"
+            ><div>
+              <img src="img/img2.jpg" alt="" />
+              <div class="overlay">
+                <h3>Desarrollo web</h3>
+                <p>Carta con contador de fecha y hora</p>
+              </div>
+            </div></a
+          >
+          <a
+            class="proyecto"
+            target="_blank"
+            href="https://reynosa.website/Graficos/"
+            ><div>
+              <img src="img/img3.jpg" alt="" />
+              <div class="overlay">
+                <h3>Desarrollo web</h3>
+                <p>Generador de Gráficos</p>
+              </div>
+            </div></a
+          >
+          <a
+            class="proyecto"
+            target="_blank"
+            href="https://reynosa.website/Contador/"
+            ><div>
+              <img src="img/img4.jpg" alt="" />
+              <div class="overlay">
+                <h3>Desarrollo web</h3>
+                <p>Contador</p>
+              </div>
+            </div></a
+          >
         </div>
+      </div>
     </section>
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número de telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7330.929468728636!2d-106.46710150740903!3d23.262557416024915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f54b4b6f10d0d%3A0xb0c3bcead0471965!2sS%C3%A1balo%20Country%2C%2082100%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1702426121853!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>                               
-                                Mazatlán, Sinaloa.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile"></i>                               
-                                Llama: +52 669 - 2725843
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: urielr.reynosa@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número de telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7330.929468728636!2d-106.46710150740903!3d23.262557416024915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f54b4b6f10d0d%3A0xb0c3bcead0471965!2sS%C3%A1balo%20Country%2C%2082100%20Mazatl%C3%A1n%2C%20Sin.!5e0!3m2!1ses-419!2smx!4v1702426121853!5m2!1ses-419!2smx"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Mazatlán, Sinaloa.
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile"></i>
+                  Llama: +52 669 - 2725843
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: urielr.reynosa@gmail.com
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- FOOTER -->
     <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-            <div class="redes">
-                <a  target="_blank" href="https://www.linkedin.com/in/uriel-rojas-reynosa-605720249/"><i class="fa-brands fa-linkedin"></i></a>
-                <a  target="_blank" href="https://github.com/RojasReynosa"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:urielr.reynosa@gmail.com"><i class="fa-brands fa-google"></i></a>
-            </div>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/uriel-rojas-reynosa-605720249/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://github.com/RojasReynosa"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:urielr.reynosa@gmail.com"
+          ><i class="fa-brands fa-google"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
